@@ -27,6 +27,35 @@ A physics-focused chatbot application built using **Streamlit** and **LangChain*
 
 ---
 
+## **Evaluation Metrics**
+
+### **ROUGE**
+Measures the overlap between chatbot responses and reference answers:
+- **ROUGE-1 F1**: Unigram overlap.
+- **ROUGE-2 F1**: Bigram overlap.
+- **ROUGE-L F1**: Longest common subsequence.
+
+### **BLEU**
+Evaluates the n-gram precision of chatbot responses against reference answers:
+- Scores range from **0** (poor match) to **1** (perfect match).
+
+---
+
+## **Dependencies**
+All dependencies are listed in `requirements.txt`. Key libraries include:
+- **`streamlit`**: For the interactive web interface.
+- **`langchain`**: For building the chatbot's retrieval-augmented generation (RAG) pipeline.
+- **`chroma-db`**: For vector storage and retrieval.
+- **`nltk`** and **`rouge-score`**: For evaluation metrics.
+- **`Llama 3.1`**: For generating context-aware responses.
+
+---
+
+## **Acknowledgments**
+- **LangChain**: For the framework enabling RAG-based conversational AI.
+- **Ollama**: For the lightweight and efficient LLM used for generating responses.
+- **Streamlit**: For providing an easy-to-use interface for interactive applications.
+
 ---
 
 ## **Setup and Installation**
